@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F20B75AE255F05FF004E3026 /* PRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20B75AD255F05FF004E3026 /* PRView.swift */; };
+		F20B75B2255F0678004E3026 /* TimerPR.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20B75B1255F0678004E3026 /* TimerPR.swift */; };
+		F20B75B5255F0A4C004E3026 /* TimerCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20B75B4255F0A4C004E3026 /* TimerCC.swift */; };
+		F20B75B8255F0AC4004E3026 /* CCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20B75B7255F0AC4004E3026 /* CCView.swift */; };
+		F20B75BC255F0C66004E3026 /* OPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20B75BB255F0C66004E3026 /* OPView.swift */; };
+		F20B75BF255F0C71004E3026 /* TimerOP.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20B75BE255F0C71004E3026 /* TimerOP.swift */; };
+		F20B75C2255F0D2A004E3026 /* PrintingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20B75C1255F0D2A004E3026 /* PrintingView.swift */; };
+		F20B75C6255F0D38004E3026 /* TimerPrinting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20B75C5255F0D38004E3026 /* TimerPrinting.swift */; };
+		F214E10B2471A66D00FE80D9 /* choixBunker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F214E10A2471A66D00FE80D9 /* choixBunker.swift */; };
+		F22197F72564B80A004836EA /* UniversalTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22197F62564B80A004836EA /* UniversalTimer.swift */; };
+		F24C79A22465E38A00C27173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C79A12465E38A00C27173 /* AppDelegate.swift */; };
+		F24C79A42465E38A00C27173 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C79A32465E38A00C27173 /* SceneDelegate.swift */; };
+		F24C79A62465E38A00C27173 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C79A52465E38A00C27173 /* ContentView.swift */; };
+		F24C79A82465E38C00C27173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24C79A72465E38C00C27173 /* Assets.xcassets */; };
+		F24C79AB2465E38C00C27173 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24C79AA2465E38C00C27173 /* Preview Assets.xcassets */; };
+		F24C79AE2465E38C00C27173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24C79AC2465E38C00C27173 /* LaunchScreen.storyboard */; };
+		F24C79B62465E46300C27173 /* BusinessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C79B52465E46300C27173 /* BusinessView.swift */; };
+		F24C79B82465E8D700C27173 /* SportingGoodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C79B72465E8D700C27173 /* SportingGoodsView.swift */; };
+		F24C79BA2465E9AE00C27173 /* SAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C79B92465E9AE00C27173 /* SAIView.swift */; };
+		F24C79BC2465F02C00C27173 /* TimerSporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C79BB2465F02C00C27173 /* TimerSporting.swift */; };
+		F24C79BE2465F0E900C27173 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C79BD2465F0E900C27173 /* Helper.swift */; };
+		F25A4E042565A5C10025CBE6 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25A4E032565A5C10025CBE6 /* TestView.swift */; };
+		F2C6368D2466117D009AE402 /* TimerSAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C6368C2466117D009AE402 /* TimerSAI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F20B75AD255F05FF004E3026 /* PRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRView.swift; sourceTree = "<group>"; };
+		F20B75B1255F0678004E3026 /* TimerPR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPR.swift; sourceTree = "<group>"; };
+		F20B75B4255F0A4C004E3026 /* TimerCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCC.swift; sourceTree = "<group>"; };
+		F20B75B7255F0AC4004E3026 /* CCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCView.swift; sourceTree = "<group>"; };
+		F20B75BB255F0C66004E3026 /* OPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPView.swift; sourceTree = "<group>"; };
+		F20B75BE255F0C71004E3026 /* TimerOP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerOP.swift; sourceTree = "<group>"; };
+		F20B75C1255F0D2A004E3026 /* PrintingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintingView.swift; sourceTree = "<group>"; };
+		F20B75C5255F0D38004E3026 /* TimerPrinting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPrinting.swift; sourceTree = "<group>"; };
+		F214E10A2471A66D00FE80D9 /* choixBunker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choixBunker.swift; sourceTree = "<group>"; };
+		F22197F62564B80A004836EA /* UniversalTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTimer.swift; sourceTree = "<group>"; };
+		F24C799E2465E38A00C27173 /* GTA Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GTA Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F24C79A12465E38A00C27173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F24C79A32465E38A00C27173 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F24C79A52465E38A00C27173 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F24C79A72465E38C00C27173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F24C79AA2465E38C00C27173 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F24C79AD2465E38C00C27173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F24C79AF2465E38C00C27173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F24C79B52465E46300C27173 /* BusinessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessView.swift; sourceTree = "<group>"; };
+		F24C79B72465E8D700C27173 /* SportingGoodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportingGoodsView.swift; sourceTree = "<group>"; };
+		F24C79B92465E9AE00C27173 /* SAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAIView.swift; sourceTree = "<group>"; };
+		F24C79BB2465F02C00C27173 /* TimerSporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSporting.swift; sourceTree = "<group>"; };
+		F24C79BD2465F0E900C27173 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		F25A4E032565A5C10025CBE6 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		F2C6368C2466117D009AE402 /* TimerSAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSAI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F24C799B2465E38A00C27173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F24C79952465E38A00C27173 = {
+			isa = PBXGroup;
+			children = (
+				F24C79BD2465F0E900C27173 /* Helper.swift */,
+				F24C79A02465E38A00C27173 /* GestionGta */,
+				F24C799F2465E38A00C27173 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F24C799F2465E38A00C27173 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F24C799E2465E38A00C27173 /* GTA Manager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F24C79A02465E38A00C27173 /* GestionGta */ = {
+			isa = PBXGroup;
+			children = (
+				F24C79A12465E38A00C27173 /* AppDelegate.swift */,
+				F24C79A32465E38A00C27173 /* SceneDelegate.swift */,
+				F24C79A52465E38A00C27173 /* ContentView.swift */,
+				F24C79A72465E38C00C27173 /* Assets.xcassets */,
+				F24C79AC2465E38C00C27173 /* LaunchScreen.storyboard */,
+				F24C79AF2465E38C00C27173 /* Info.plist */,
+				F24C79A92465E38C00C27173 /* Preview Content */,
+				F214E10A2471A66D00FE80D9 /* choixBunker.swift */,
+			);
+			path = GestionGta;
+			sourceTree = "<group>";
+		};
+		F24C79A92465E38C00C27173 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F24C79AA2465E38C00C27173 /* Preview Assets.xcassets */,
+				F24C79B52465E46300C27173 /* BusinessView.swift */,
+				F24C79B72465E8D700C27173 /* SportingGoodsView.swift */,
+				F24C79B92465E9AE00C27173 /* SAIView.swift */,
+				F20B75AD255F05FF004E3026 /* PRView.swift */,
+				F20B75B7255F0AC4004E3026 /* CCView.swift */,
+				F20B75BB255F0C66004E3026 /* OPView.swift */,
+				F20B75C1255F0D2A004E3026 /* PrintingView.swift */,
+				F24C79BB2465F02C00C27173 /* TimerSporting.swift */,
+				F2C6368C2466117D009AE402 /* TimerSAI.swift */,
+				F20B75B1255F0678004E3026 /* TimerPR.swift */,
+				F20B75B4255F0A4C004E3026 /* TimerCC.swift */,
+				F20B75BE255F0C71004E3026 /* TimerOP.swift */,
+				F20B75C5255F0D38004E3026 /* TimerPrinting.swift */,
+				F22197F62564B80A004836EA /* UniversalTimer.swift */,
+				F25A4E032565A5C10025CBE6 /* TestView.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F24C799D2465E38A00C27173 /* GTA Manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F24C79B22465E38C00C27173 /* Build configuration list for PBXNativeTarget "GTA Manager" */;
+			buildPhases = (
+				F24C799A2465E38A00C27173 /* Sources */,
+				F24C799B2465E38A00C27173 /* Frameworks */,
+				F24C799C2465E38A00C27173 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GTA Manager";
+			productName = GestionGta;
+			productReference = F24C799E2465E38A00C27173 /* GTA Manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F24C79962465E38A00C27173 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Christophe Roberge";
+				TargetAttributes = {
+					F24C799D2465E38A00C27173 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = F24C79992465E38A00C27173 /* Build configuration list for PBXProject "GTA Manager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F24C79952465E38A00C27173;
+			productRefGroup = F24C799F2465E38A00C27173 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F24C799D2465E38A00C27173 /* GTA Manager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F24C799C2465E38A00C27173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24C79AE2465E38C00C27173 /* LaunchScreen.storyboard in Resources */,
+				F24C79AB2465E38C00C27173 /* Preview Assets.xcassets in Resources */,
+				F24C79A82465E38C00C27173 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F24C799A2465E38A00C27173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22197F72564B80A004836EA /* UniversalTimer.swift in Sources */,
+				F20B75B5255F0A4C004E3026 /* TimerCC.swift in Sources */,
+				F20B75AE255F05FF004E3026 /* PRView.swift in Sources */,
+				F20B75B8255F0AC4004E3026 /* CCView.swift in Sources */,
+				F24C79BA2465E9AE00C27173 /* SAIView.swift in Sources */,
+				F24C79B82465E8D700C27173 /* SportingGoodsView.swift in Sources */,
+				F214E10B2471A66D00FE80D9 /* choixBunker.swift in Sources */,
+				F24C79B62465E46300C27173 /* BusinessView.swift in Sources */,
+				F24C79A22465E38A00C27173 /* AppDelegate.swift in Sources */,
+				F20B75C6255F0D38004E3026 /* TimerPrinting.swift in Sources */,
+				F20B75BF255F0C71004E3026 /* TimerOP.swift in Sources */,
+				F20B75BC255F0C66004E3026 /* OPView.swift in Sources */,
+				F24C79A42465E38A00C27173 /* SceneDelegate.swift in Sources */,
+				F20B75B2255F0678004E3026 /* TimerPR.swift in Sources */,
+				F24C79BC2465F02C00C27173 /* TimerSporting.swift in Sources */,
+				F24C79A62465E38A00C27173 /* ContentView.swift in Sources */,
+				F25A4E042565A5C10025CBE6 /* TestView.swift in Sources */,
+				F20B75C2255F0D2A004E3026 /* PrintingView.swift in Sources */,
+				F24C79BE2465F0E900C27173 /* Helper.swift in Sources */,
+				F2C6368D2466117D009AE402 /* TimerSAI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F24C79AC2465E38C00C27173 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F24C79AD2465E38C00C27173 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F24C79B02465E38C00C27173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F24C79B12465E38C00C27173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F24C79B32465E38C00C27173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GestionGta/Preview Content\"";
+				DEVELOPMENT_TEAM = D6Z3T9B94P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GestionGta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.crobapps.GestionGta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F24C79B42465E38C00C27173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GestionGta/Preview Content\"";
+				DEVELOPMENT_TEAM = D6Z3T9B94P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GestionGta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.crobapps.GestionGta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F24C79992465E38A00C27173 /* Build configuration list for PBXProject "GTA Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24C79B02465E38C00C27173 /* Debug */,
+				F24C79B12465E38C00C27173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F24C79B22465E38C00C27173 /* Build configuration list for PBXNativeTarget "GTA Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24C79B32465E38C00C27173 /* Debug */,
+				F24C79B42465E38C00C27173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F24C79962465E38A00C27173 /* Project object */;
+}
