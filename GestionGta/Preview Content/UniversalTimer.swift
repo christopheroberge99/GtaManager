@@ -11,10 +11,7 @@ import SwiftUI
 class UniversalTimer: ObservableObject {
     
     @Published var timerMode: TimerMode = .initial
-    
-    //Fonctionne:
-    //secondsLeft = 9000
-    //secondsDoneees = 100
+    //test
     
     @Published var secondsLeft = 0
     
