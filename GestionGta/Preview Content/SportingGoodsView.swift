@@ -20,24 +20,24 @@ struct SportingGoodsView: View {
             
             Image("BunkerLocation")
                 .edgesIgnoringSafeArea(.top)
-                .offset(y: -190)
+                .offset(y: -110)
                 
             Image("Bunker")
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             .overlay(Circle().stroke(Color.white, lineWidth: 4))
             .shadow(radius: 10)
-                .offset(y: -320)
-                .padding(.bottom, -320)
+                .offset(y: -230)
+                //.padding(.bottom, -320)
             
             Text("Sporting goods")
                 .font(.title)
-                .offset(y: -120)
+                .offset(y: -230)
                 .padding(.bottom)
             
             
             ZStack{
                 Image("BigButton")
-                    .offset(y: -120)
+                    .offset(y: -230)
                     .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                 VStack{
                     Toggle(isOn: $ValueOne) {
@@ -48,7 +48,7 @@ struct SportingGoodsView: View {
                     .padding(.horizontal)
                     .padding(.horizontal)
                     .padding(.horizontal)
-                    .offset(y: -130)
+                    .offset(y: -240)
                     
                     .padding(.vertical)
                     
@@ -60,7 +60,7 @@ struct SportingGoodsView: View {
                     .padding(.horizontal)
                     .padding(.horizontal)
                     .padding(.horizontal)
-                    .offset(y: -130)
+                    .offset(y: -240)
                 }
                 
             }
@@ -71,33 +71,33 @@ struct SportingGoodsView: View {
             HStack{
                 ZStack{
                     Image("SquareButton")
-                        .offset(y: -80)
+                        .offset(y: -200)
                         .shadow(radius: 2)
                     VStack{
                         Text("\(timerSporting.secondsLeft)")
                             .font(.largeTitle)
                             .fontWeight(.medium)
-                            .offset(y: -80)
+                            .offset(y: -200)
                         Text("Remaining time")
-                            .offset(y: -80)
+                            .offset(y: -200)
                     }
                 }
                 
                 ZStack{
                     Image("SquareButton")
-                        .offset(y: -80)
+                        .offset(y: -200)
                         .shadow(radius: 2)
                     VStack{
                         Text("\(timerSporting.MoneySpent) $")
                             .font(.largeTitle)
                             .fontWeight(.medium)
-                            .offset(y: -80)
+                            .offset(y: -200)
                         HStack{
                                 Text("Money spent")
-                                    .offset(y: -80)
+                                    .offset(y: -200)
                                 
                                 Text("(-)")
-                                    .offset(y: -80)
+                                    .offset(y: -200)
                                  .onTapGesture(perform: {
                                         self.timerSporting.decreaseSpent()
                                           })
@@ -114,9 +114,9 @@ struct SportingGoodsView: View {
                     
                     Image("LongButton")
                         .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                        .offset(y: -30)
+                        .offset(y: -170)
                     Text("Resupply")
-                        .offset(y: -30)
+                        .offset(y: -170)
                         .font(.title)
                         .foregroundColor(.white)
                         .font(.headline)
@@ -151,11 +151,11 @@ struct SportingGoodsView: View {
                     
                     ZStack{
                         Image("Button1")
-                            .offset(y: -30)
+                            .offset(y: -170)
                             .shadow(radius: 10)
                         
                         Text("Pause")
-                            .offset(y: -30)
+                            .offset(y: -170)
                             .foregroundColor(.white)
                             .font(.headline)
                                             .onTapGesture(perform: {
@@ -165,11 +165,11 @@ struct SportingGoodsView: View {
                     
                     ZStack{
                         Image("Button2")
-                            .offset(y: -30)
+                            .offset(y: -170)
                             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                         
                         Text("Reset")
-                            .offset(y: -30)
+                            .offset(y: -170)
                             .foregroundColor(.white)
                             .font(.headline)
                             .font(.headline)
