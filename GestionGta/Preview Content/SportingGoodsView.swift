@@ -34,18 +34,37 @@ struct SportingGoodsView: View {
                 .offset(y: -120)
                 .padding(.bottom)
             
-            Toggle(isOn: $ValueOne) {
-                Text("Equipement upgrade")
-            }
-            .padding(.horizontal)
-            .offset(y: -120)
             
-            
-            Toggle(isOn: $ValueTwo) {
-                Text("Staff upgrade")
+            ZStack{
+                Image("BigButton")
+                    .offset(y: -120)
+                    .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                VStack{
+                    Toggle(isOn: $ValueOne) {
+                        Text("Equipement upgrade")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                    }
+                    .padding(.horizontal)
+                    .padding(.horizontal)
+                    .padding(.horizontal)
+                    .offset(y: -130)
+                    
+                    .padding(.vertical)
+                    
+                    Toggle(isOn: $ValueTwo) {
+                        Text("Staff upgrade")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                    }
+                    .padding(.horizontal)
+                    .padding(.horizontal)
+                    .padding(.horizontal)
+                    .offset(y: -130)
+                }
+                
             }
-            .padding(.horizontal)
-            .offset(y: -120)
+            
         
           Spacer()
         
@@ -61,7 +80,7 @@ struct SportingGoodsView: View {
                 
             HStack{
                 
-                    Text("Money spent on supplies: \(timerSporting.MoneySpent) K $")
+                    Text("Money spent on supplies \(timerSporting.MoneySpent) k $")
                     
                 
                 
@@ -72,51 +91,78 @@ struct SportingGoodsView: View {
                          }
             .offset(y: -70)
                   
-            Text("Resupply")
-                .font(.title)
-                .offset(y: -70)
-                    .onTapGesture(perform: {
-                                    
-                        self.timerSporting.setName(nom: "Sporting Goods")
-                        
-                                    if self.ValueOne && !self.ValueTwo{
-                                        self.timerSporting.setSecondsLeft(secs: 2400)
-                                               }
-                                    else if self.ValueTwo && !self.ValueOne{
-                                        self.timerSporting.setSecondsLeft(secs: 2400)
-                                               }
-                                    else if self.ValueOne && self.ValueTwo{
-                                        self.timerSporting.setSecondsLeft(secs: 3000)
-                                               }
-                                    else if !self.ValueOne && !self.ValueTwo{
-                                        self.timerSporting.setSecondsLeft(secs: 305)
-                                               }
-                                    
-                                    
-                                    
-                            self.timerSporting.addToSpent()
-                            self.timerSporting.reset()
-                            self.timerSporting.timerMode == .running ? self.timerSporting.pause() :  self.timerSporting.start()
-                                  
-                                 })
-            
-            
-            Text("Pause")
-                .offset(y: -70)
-                                .onTapGesture(perform: {
+                ZStack{
+                    
+                    Image("LongButton")
+                        .offset(y: 20)
+                        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    
+                    Text("Resupply")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .offset(y: 20)
+                            .onTapGesture(perform: {
+                                            
+                                self.timerSporting.setName(nom: "Sporting Goods")
+                                
+                                            if self.ValueOne && !self.ValueTwo{
+                                                self.timerSporting.setSecondsLeft(secs: 2400)
+                                                       }
+                                            else if self.ValueTwo && !self.ValueOne{
+                                                self.timerSporting.setSecondsLeft(secs: 2400)
+                                                       }
+                                            else if self.ValueOne && self.ValueTwo{
+                                                self.timerSporting.setSecondsLeft(secs: 3000)
+                                                       }
+                                            else if !self.ValueOne && !self.ValueTwo{
+                                                self.timerSporting.setSecondsLeft(secs: 305)
+                                                       }
+                                            
+                                            
+                                            
+                                    self.timerSporting.addToSpent()
+                                    self.timerSporting.reset()
                                     self.timerSporting.timerMode == .running ? self.timerSporting.pause() :  self.timerSporting.start()
-                                       })
+                                          
+                                         })
+                }
+                
+           
+                HStack{
+                    
+                    ZStack{
+                        Image("Button1")
+                            .shadow(radius: 10)
+                        
+                        Text("Pause")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                                            .onTapGesture(perform: {
+                                                self.timerSporting.timerMode == .running ? self.timerSporting.pause() :  self.timerSporting.start()
+                                                   })
+                    }
+                    
+                    ZStack{
+                        Image("Button2")
+                            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                        
+                        Text("Reset")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                            .font(.headline)
+                                                     .onTapGesture(perform: {
+                                                      self.timerSporting.reset()
+                                                        self.timerSporting.resetSpent()
+                                                     
+                                                     })
+                    }
+                }
+            
                 
             
+                
+                
             
-            Text("Reset")
-                .offset(y: -70)
-                .font(.headline)
-                                         .onTapGesture(perform: {
-                                          self.timerSporting.reset()
-                                            self.timerSporting.resetSpent()
-                                         
-                                         })
                 .padding(.bottom)
                 .padding(.bottom)
                 .padding(.bottom)
