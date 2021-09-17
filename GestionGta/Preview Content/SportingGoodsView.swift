@@ -66,41 +66,60 @@ struct SportingGoodsView: View {
             }
             
         
-          Spacer()
-        
-            Text("Remaining time: ")
-                .offset(y: -110)
-            Text("\(timerSporting.secondsLeft)")
-                .font(.largeTitle)
-                .fontWeight(.medium)
-                .offset(y: -110)
             
 
-            VStack(spacing: 30) {
-                
             HStack{
+                ZStack{
+                    Image("SquareButton")
+                        .offset(y: -80)
+                        .shadow(radius: 2)
+                    VStack{
+                        Text("\(timerSporting.secondsLeft)")
+                            .font(.largeTitle)
+                            .fontWeight(.medium)
+                            .offset(y: -80)
+                        Text("Remaining time")
+                            .offset(y: -80)
+                    }
+                }
                 
-                    Text("Money spent on supplies \(timerSporting.MoneySpent) k $")
-                    
+                ZStack{
+                    Image("SquareButton")
+                        .offset(y: -80)
+                        .shadow(radius: 2)
+                    VStack{
+                        Text("\(timerSporting.MoneySpent) $")
+                            .font(.largeTitle)
+                            .fontWeight(.medium)
+                            .offset(y: -80)
+                        HStack{
+                                Text("Money spent")
+                                    .offset(y: -80)
+                                
+                                Text("(-)")
+                                    .offset(y: -80)
+                                 .onTapGesture(perform: {
+                                        self.timerSporting.decreaseSpent()
+                                          })
+                                     }
+                    }
+                }
                 
-                
-                    Text("(-)")
-                     .onTapGesture(perform: {
-                            self.timerSporting.decreaseSpent()
-                              })
-                         }
-            .offset(y: -70)
+            }
+            
                   
+            VStack{
+                
                 ZStack{
                     
                     Image("LongButton")
-                        .offset(y: 20)
                         .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                    
+                        .offset(y: -30)
                     Text("Resupply")
+                        .offset(y: -30)
                         .font(.title)
                         .foregroundColor(.white)
-                        .offset(y: 20)
+                        .font(.headline)
                             .onTapGesture(perform: {
                                             
                                 self.timerSporting.setName(nom: "Sporting Goods")
@@ -132,9 +151,11 @@ struct SportingGoodsView: View {
                     
                     ZStack{
                         Image("Button1")
+                            .offset(y: -30)
                             .shadow(radius: 10)
                         
                         Text("Pause")
+                            .offset(y: -30)
                             .foregroundColor(.white)
                             .font(.headline)
                                             .onTapGesture(perform: {
@@ -144,9 +165,11 @@ struct SportingGoodsView: View {
                     
                     ZStack{
                         Image("Button2")
+                            .offset(y: -30)
                             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                         
                         Text("Reset")
+                            .offset(y: -30)
                             .foregroundColor(.white)
                             .font(.headline)
                             .font(.headline)
@@ -157,11 +180,7 @@ struct SportingGoodsView: View {
                                                      })
                     }
                 }
-            
-                
-            
-                
-                
+            }
             
                 .padding(.bottom)
                 .padding(.bottom)
@@ -169,7 +188,6 @@ struct SportingGoodsView: View {
           }
         }
       }
-    }
 
 
 struct SportingGoodsView_Previews: PreviewProvider {
