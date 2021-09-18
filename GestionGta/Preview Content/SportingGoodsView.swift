@@ -88,7 +88,7 @@ struct SportingGoodsView: View {
                         .offset(y: -200)
                         .shadow(radius: 2)
                     VStack{
-                        Text("\(timerSporting.MoneySpent) $")
+                        Text("\(timerSporting.MoneySpent)k $")
                             .font(.largeTitle)
                             .fontWeight(.medium)
                             .offset(y: -200)

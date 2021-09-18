@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct PRView: View {
-     @ObservedObject var timerPR = UniversalTimer()
+     @ObservedObject var timerPharma = UniversalTimer()
      @State var ValueOne = false
      @State var ValueTwo = false
     
@@ -19,109 +19,174 @@ struct PRView: View {
             
             Image("PRLocation")
                 .edgesIgnoringSafeArea(.top)
-                .offset(y: -190)
+                .offset(y: -110)
                 
             Image("PR")
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             .overlay(Circle().stroke(Color.white, lineWidth: 4))
             .shadow(radius: 10)
-                .offset(y: -320)
-                .padding(.bottom, -320)
+                .offset(y: -230)
+                //.padding(.bottom, -320)
             
-            Text("Pharmaceutical research")
+            Text("Pharmaceutical reseach")
                 .font(.title)
-                .offset(y: -120)
+                .offset(y: -230)
                 .padding(.bottom)
             
-            Toggle(isOn: $ValueOne) {
-                Text("Equipement upgrade")
-            }
-            .padding(.horizontal)
-            .offset(y: -120)
             
-            
-            Toggle(isOn: $ValueTwo) {
-                Text("Staff upgrade")
+            ZStack{
+                Image("BigButton")
+                    .offset(y: -230)
+                    .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                VStack{
+                    Toggle(isOn: $ValueOne) {
+                        Text("Equipement upgrade")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                    }
+                    .padding(.horizontal)
+                    .padding(.horizontal)
+                    .padding(.horizontal)
+                    .offset(y: -240)
+                    
+                    .padding(.vertical)
+                    
+                    Toggle(isOn: $ValueTwo) {
+                        Text("Staff upgrade")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                    }
+                    .padding(.horizontal)
+                    .padding(.horizontal)
+                    .padding(.horizontal)
+                    .offset(y: -240)
+                }
+                
             }
-            .padding(.horizontal)
-            .offset(y: -120)
+            
         
-          Spacer()
-        
-            Text("Remaining time: ")
-                .offset(y: -110)
-            Text("\(timerPR.secondsLeft)")
-                .font(.largeTitle)
-                .fontWeight(.medium)
-                .offset(y: -110)
             
 
-            VStack(spacing: 30) {
-                
             HStack{
+                ZStack{
+                    Image("SquareButton")
+                        .offset(y: -200)
+                        .shadow(radius: 2)
+                    VStack{
+                        Text("\(timerPharma.secondsLeft)")
+                            .font(.largeTitle)
+                            .fontWeight(.medium)
+                            .offset(y: -200)
+                        Text("Remaining time")
+                            .offset(y: -200)
+                    }
+                }
                 
-                    Text("Money spent on supplies: \(timerPR.MoneySpent) K $")
-                    
+                ZStack{
+                    Image("SquareButton")
+                        .offset(y: -200)
+                        .shadow(radius: 2)
+                    VStack{
+                        Text("\(timerPharma.MoneySpent)k $")
+                            .font(.largeTitle)
+                            .fontWeight(.medium)
+                            .offset(y: -200)
+                        HStack{
+                                Text("Money spent")
+                                    .offset(y: -200)
+                                
+                                Text("(-)")
+                                    .offset(y: -200)
+                                 .onTapGesture(perform: {
+                                        self.timerPharma.decreaseSpent()
+                                          })
+                                     }
+                    }
+                }
                 
-                
-                    Text("(-)")
-                     .onTapGesture(perform: {
-                            self.timerPR.decreaseSpent()
-                              })
-                         }
-            .offset(y: -70)
+            }
+            
                   
-            Text("Resupply")
-                .font(.title)
-                .offset(y: -70)
-                    .onTapGesture(perform: {
-                                    
-                        self.timerPR.setName(nom: "Pharmaceutical Research")
-                                    if self.ValueOne && !self.ValueTwo{
-                                        self.timerPR.setSecondsLeft(secs: 2400)
-                                               }
-                                    else if self.ValueTwo && !self.ValueOne{
-                                        self.timerPR.setSecondsLeft(secs: 2400)
-                                               }
-                                    else if self.ValueOne && self.ValueTwo{
-                                        self.timerPR.setSecondsLeft(secs: 3000)
-                                               }
-                                    else if !self.ValueOne && !self.ValueTwo{
-                                        self.timerPR.setSecondsLeft(secs: 1800)
-                                               }
-                                    
-                                    
-                                    
-                            self.timerPR.addToSpent()
-                            self.timerPR.reset()
-                            self.timerPR.timerMode == .running ? self.timerPR.pause() :  self.timerPR.start()
-                                  
-                                 })
-            
-            
-            Text("Pause")
-                .offset(y: -70)
-                                .onTapGesture(perform: {
-                                    self.timerPR.timerMode == .running ? self.timerPR.pause() :  self.timerPR.start()
-                                       })
+            VStack{
                 
-            
-            
-            Text("Reset")
-                .offset(y: -70)
-                .font(.headline)
-                                         .onTapGesture(perform: {
-                                          self.timerPR.reset()
-                                            self.timerPR.resetSpent()
-                                         
+                ZStack{
+                    
+                    Image("LongButton")
+                        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                        .offset(y: -170)
+                    Text("Resupply")
+                        .offset(y: -170)
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .font(.headline)
+                            .onTapGesture(perform: {
+                                            
+                                self.timerPharma.setName(nom: "Pharmaceutical reseach")
+                                
+                                            if self.ValueOne && !self.ValueTwo{
+                                                self.timerPharma.setSecondsLeft(secs: 2400)
+                                                       }
+                                            else if self.ValueTwo && !self.ValueOne{
+                                                self.timerPharma.setSecondsLeft(secs: 2400)
+                                                       }
+                                            else if self.ValueOne && self.ValueTwo{
+                                                self.timerPharma.setSecondsLeft(secs: 3000)
+                                                       }
+                                            else if !self.ValueOne && !self.ValueTwo{
+                                                self.timerPharma.setSecondsLeft(secs: 305)
+                                                       }
+                                            
+                                            
+                                            
+                                    self.timerPharma.addToSpent()
+                                    self.timerPharma.reset()
+                                    self.timerPharma.timerMode == .running ? self.timerPharma.pause() :  self.timerPharma.start()
+                                          
                                          })
+                }
+                
+           
+                HStack{
+                    
+                    ZStack{
+                        Image("Button1")
+                            .offset(y: -170)
+                            .shadow(radius: 10)
+                        
+                        Text("Pause")
+                            .offset(y: -170)
+                            .foregroundColor(.white)
+                            .font(.headline)
+                                            .onTapGesture(perform: {
+                                                self.timerPharma.timerMode == .running ? self.timerPharma.pause() :  self.timerPharma.start()
+                                                   })
+                    }
+                    
+                    ZStack{
+                        Image("Button2")
+                            .offset(y: -170)
+                            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                        
+                        Text("Reset")
+                            .offset(y: -170)
+                            .foregroundColor(.white)
+                            .font(.headline)
+                            .font(.headline)
+                                                     .onTapGesture(perform: {
+                                                      self.timerPharma.reset()
+                                                        self.timerPharma.resetSpent()
+                                                     
+                                                     })
+                    }
+                }
+            }
+            
                 .padding(.bottom)
                 .padding(.bottom)
                 .padding(.bottom)
           }
         }
       }
-    }
 
 
 struct PRView_Previews: PreviewProvider {
